@@ -1323,3 +1323,29 @@ button, input, select, textarea {
 .contact-item a + a { margin-top: 6px; }
 @media (max-width: 980px) { .credentials-grid { grid-template-columns: repeat(3, minmax(0,1fr)); } }
 @media (max-width: 720px) { .credentials-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } .credential { padding: 16px 8px; } .credential img { height: 90px; } }
+
+
+/* Imagem de descupinização */
+.service-image.image-termite {
+  background-image: url("./descupinizacao.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Imagem de limpeza de reservatórios */
+.service-image.image-water {
+  background-image: url("./limpeza-reservatorios.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Imagem de análise de água */
+.service-image.image-analysis {
+  background-image: url("./limpeza-reservatorios.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
