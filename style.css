@@ -1,35 +1,3 @@
-background-image: url("rato.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.image-sanitize {
-  background-image: url("dedetizacao-residencial.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.about-main {
-  background:
-    linear-gradient(rgba(8, 61, 45, 0.10), rgba(8, 61, 45, 0.10)),
-    url("dedetizacao-industrial.jpeg") center/cover no-repeat;
-}
-
-.cta {
-  background:
-    linear-gradient(100deg, rgba(8, 61, 45, 0.98), rgba(17, 122, 77, 0.90)),
-    url("dedetizacao-residencial.jpeg") center/cover no-repeat;
-}
-
-/* =========================
-   ÁREA DO CLIENTE
-========================= */
-.btn-client {
-  background: var(--green-900);
-  box-shadow: 0 10px 24px rgba(8, 61, 45, 0.22);
-  white-space: nowrap;
 }
 
 .btn-client:hover {
@@ -125,3 +93,17 @@ background-image: url("rato.jpeg");
     flex-basis: 56px;
   }
 }
+
+/* Ajustes solicitados no documento Word */
+.image-water { background-image: url("limpeza-reservatorios.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.image-termite { background-image: url("descupinizacao.jpeg"); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.image-analysis { background-image: linear-gradient(135deg, rgba(8,61,45,.65), rgba(22,150,93,.22)), url("limpeza-reservatorios.jpg"); background-position: center; background-size: cover; }
+.credentials-section { background: var(--cream); }
+.credentials-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
+.credential { background: var(--white); border: 1px solid var(--border); border-radius: 18px; padding: 20px 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; box-shadow: 0 10px 25px rgba(8,61,45,.05); }
+.credential img { display: block; width: 100%; max-width: 125px; height: 110px; object-fit: contain; }
+.credential span { font-family: "Montserrat", sans-serif; font-size: .83rem; font-weight: 700; color: var(--green-900); }
+.credentials-note { color: var(--muted); font-size: .84rem; max-width: 900px; margin: 24px auto 0; text-align: center; }
+.contact-item a + a { margin-top: 6px; }
+@media (max-width: 980px) { .credentials-grid { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+@media (max-width: 720px) { .credentials-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } .credential { padding: 16px 8px; } .credential img { height: 90px; } }
