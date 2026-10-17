@@ -548,15 +548,22 @@ button {
 
 .service-card .service-icon svg {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   color: #ffffff;
   fill: currentColor;
 }
 
-.service-card .service-icon svg path[fill="none"] {
-  fill: none;
-  stroke: #ffffff;
+/* Mantém os detalhes internos do SVG */
+
+.service-card .service-icon svg circle {
+  fill: #ffffff;
+}
+
+/* Olho verde do rato */
+
+.service-card .service-icon svg circle:last-child {
+  fill: #159963;
 }
 
 /* Caso o HTML antigo ainda utilize emoji */
