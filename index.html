@@ -3,14 +3,14 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Controle profissional de pragas para residências, condomínios e empresas." name="description"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Controle profissional de pragas para residências, condomínios e empresas."/>
 <title>EcoproPraga - Brasil | Controle de Pragas Urbanas</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
 <link href="style.css" rel="stylesheet"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -37,10 +37,13 @@
       <a href="#pragas">Pragas</a>
       <a href="#depoimentos">Avaliações</a>
       <a href="#contato">Contato</a>
-      <a aria-label="Abrir login da Área do Cliente EcoproPraga - Brasil"
-         class="btn btn-small btn-client"
-         href="https://www.benuerp.com.br/new/loginCliente.benu?empresa=1471ECOPRO&amp;corBotao=%23083D2D"
-         rel="noopener noreferrer" target="_blank">
+      <a
+        aria-label="Abrir login da Área do Cliente EcoproPraga - Brasil"
+        class="btn btn-small btn-client"
+        href="https://www.benuerp.com.br/new/loginCliente.benu?empresa=1471ECOPRO&amp;corBotao=%23083D2D"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         <i class="fa-solid fa-right-to-bracket"></i> Área do Cliente
       </a>
     </nav>
@@ -58,12 +61,14 @@
       Soluções para residências, condomínios, comércios e indústrias,
       com aplicação responsável e atendimento personalizado.
     </p>
+
     <div class="hero-actions">
       <a class="btn" href="https://wa.me/5511975515124?text=Olá! Preciso de controle de pragas." rel="noopener" target="_blank">
         <i class="fa-brands fa-whatsapp"></i> Solicitar avaliação
       </a>
       <a class="btn btn-outline" href="#servicos">Conhecer serviços</a>
     </div>
+
     <div class="hero-features">
       <span><i class="fa-solid fa-check"></i> Equipe especializada</span>
       <span><i class="fa-solid fa-check"></i> Produtos regularizados</span>
@@ -74,27 +79,50 @@
 
 <section class="quick-contact">
   <div class="container quick-grid">
+
     <article>
-      <i class="fa-solid fa-house-shield"></i>
+      <span class="quick-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m3 10 9-7 9 7"/>
+          <path d="M5 9v11h14V9"/>
+          <path d="M9 20v-7h6v7"/>
+          <path d="m12 8 3 2v3c0 2-1.5 3.5-3 4-1.5-.5-3-2-3-4v-3z"/>
+        </svg>
+      </span>
       <div>
         <strong>Atendimento residencial</strong>
         <span>Proteção para sua família e seus animais.</span>
       </div>
     </article>
+
     <article>
-      <i class="fa-solid fa-building-shield"></i>
+      <span class="quick-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="3" width="16" height="18" rx="1"/>
+          <path d="M8 7h2m4 0h2M8 11h2m4 0h2M10 21v-5h4v5"/>
+        </svg>
+      </span>
       <div>
         <strong>Atendimento empresarial</strong>
         <span>Planos preventivos e controle periódico.</span>
       </div>
     </article>
+
     <article>
-      <i class="fa-solid fa-headset"></i>
+      <span class="quick-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 14v-3a9 9 0 0 1 18 0v3"/>
+          <rect x="2" y="13" width="4" height="7" rx="2"/>
+          <rect x="18" y="13" width="4" height="7" rx="2"/>
+          <path d="M20 20c0 2-3 3-6 3h-2"/>
+        </svg>
+      </span>
       <div>
         <strong>Orçamento rápido</strong>
         <span>Fale diretamente com nossa equipe.</span>
       </div>
     </article>
+
   </div>
 </section>
 
@@ -107,6 +135,7 @@
     </div>
 
     <div class="services-grid">
+
       <article class="service-card reveal">
         <div class="service-image image-insects"></div>
         <div class="service-body">
@@ -120,7 +149,7 @@
       <article class="service-card reveal">
         <div class="service-image image-rats"></div>
         <div class="service-body">
-          <span class="service-icon"><i class="fa-solid fa-shield-rat"></i></span>
+          <span class="service-icon"><span class="animal-icon" aria-hidden="true">🐀</span></span>
           <h3>Desratização</h3>
           <p>Manejo e controle de ratos e camundongos com pontos estratégicos de monitoramento.</p>
           <a href="#contato">Solicitar serviço <i class="fa-solid fa-arrow-right"></i></a>
@@ -176,6 +205,7 @@
           <a href="#contato">Solicitar serviço <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </article>
+
     </div>
   </div>
 </section>
@@ -189,6 +219,7 @@
         <span>anos de experiência</span>
       </div>
     </div>
+
     <div class="about-content reveal">
       <span class="eyebrow">Quem somos</span>
       <h2>Cuidado com o ambiente, eficiência no resultado</h2>
@@ -215,6 +246,7 @@
       <h2>Nossas Credenciais</h2>
       <p>A EcoPro tem um sério compromisso com seus clientes e com o cumprimento das exigências legais e ambientais aplicáveis às suas atividades.</p>
     </div>
+
     <div class="credentials-grid reveal">
       <div class="credential">
         <img src="credencial-anvisa.jpeg" alt="Logotipo da Anvisa" loading="lazy">
@@ -237,6 +269,7 @@
         <span>CETESB</span>
       </div>
     </div>
+
     <p class="credentials-note">
       Órgãos e referências regulatórias do setor. A exibição dos logotipos não representa,
       por si só, licença, registro ou certificação concedida à empresa. Consulte a EcoPro
@@ -252,13 +285,38 @@
       <h2>Principais pragas controladas</h2>
       <p>Identificação correta e tratamento direcionado para cada tipo de ocorrência.</p>
     </div>
+
     <div class="pests-grid">
-      <article class="pest-card reveal"><i class="fa-solid fa-bug"></i><h3>Baratas</h3><p>Controle de focos, abrigos e rotas de acesso.</p></article>
-      <article class="pest-card reveal"><i class="fa-solid fa-shield-rat"></i><h3>Roedores</h3><p>Monitoramento, iscagem e ações preventivas.</p></article>
-      <article class="pest-card reveal"><i class="fa-solid fa-spider"></i><h3>Aranhas</h3><p>Tratamento de áreas internas e externas.</p></article>
-      <article class="pest-card reveal"><i class="fa-solid fa-mosquito"></i><h3>Mosquitos</h3><p>Redução de focos e aplicação localizada.</p></article>
-      <article class="pest-card reveal"><i class="fa-solid fa-ant"></i><h3>Formigas</h3><p>Controle de trilhas, ninhos e pontos de entrada.</p></article>
-      <article class="pest-card reveal"><i class="fa-solid fa-house-crack"></i><h3>Cupins</h3><p>Proteção de móveis, estruturas e madeiramentos.</p></article>
+      <article class="pest-card reveal">
+        <i class="fa-solid fa-bug"></i>
+        <h3>Baratas</h3>
+        <p>Controle de focos, abrigos e rotas de acesso.</p>
+      </article>
+      <article class="pest-card reveal">
+        <span class="animal-icon" aria-hidden="true">🐀</span>
+        <h3>Roedores</h3>
+        <p>Monitoramento, iscagem e ações preventivas.</p>
+      </article>
+      <article class="pest-card reveal">
+        <i class="fa-solid fa-spider"></i>
+        <h3>Aranhas</h3>
+        <p>Tratamento de áreas internas e externas.</p>
+      </article>
+      <article class="pest-card reveal">
+        <i class="fa-solid fa-mosquito"></i>
+        <h3>Mosquitos</h3>
+        <p>Redução de focos e aplicação localizada.</p>
+      </article>
+      <article class="pest-card reveal">
+        <span class="animal-icon" aria-hidden="true">🐜</span>
+        <h3>Formigas</h3>
+        <p>Controle de trilhas, ninhos e pontos de entrada.</p>
+      </article>
+      <article class="pest-card reveal">
+        <i class="fa-solid fa-house-crack"></i>
+        <h3>Cupins</h3>
+        <p>Proteção de móveis, estruturas e madeiramentos.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -278,6 +336,7 @@
       <span class="eyebrow">Como funciona</span>
       <h2>Atendimento simples e eficiente</h2>
     </div>
+
     <div class="process-grid">
       <article class="process-card reveal">
         <span>01</span>
@@ -307,21 +366,33 @@
       <span class="eyebrow">Avaliações</span>
       <h2>O que nossos clientes dizem</h2>
     </div>
+
     <div class="testimonials-grid">
       <article class="testimonial-card reveal">
         <div class="stars">★★★★★</div>
         <p>“Atendimento rápido e muito cuidadoso. Explicaram todo o procedimento e resolveram o problema de baratas.”</p>
-        <div class="client"><span>MC</span><div><strong>Mariana Costa</strong><small>Cliente residencial</small></div></div>
+        <div class="client">
+          <span>MC</span>
+          <div><strong>Mariana Costa</strong><small>Cliente residencial</small></div>
+        </div>
       </article>
+
       <article class="testimonial-card reveal">
         <div class="stars">★★★★★</div>
         <p>“Contratamos o plano preventivo para nossa empresa e o acompanhamento tem sido excelente.”</p>
-        <div class="client"><span>RL</span><div><strong>Rafael Lima</strong><small>Cliente empresarial</small></div></div>
+        <div class="client">
+          <span>RL</span>
+          <div><strong>Rafael Lima</strong><small>Cliente empresarial</small></div>
+        </div>
       </article>
+
       <article class="testimonial-card reveal">
         <div class="stars">★★★★★</div>
         <p>“Equipe pontual, educada e organizada. O serviço de limpeza da caixa-d’água ficou impecável.”</p>
-        <div class="client"><span>AS</span><div><strong>André Santos</strong><small>Síndico</small></div></div>
+        <div class="client">
+          <span>AS</span>
+          <div><strong>André Santos</strong><small>Síndico</small></div>
+        </div>
       </article>
     </div>
   </div>
@@ -391,16 +462,17 @@
       <div class="form-row">
         <div class="form-group">
           <label for="name">Nome</label>
-          <input id="name" placeholder="Seu nome" required="" type="text"/>
+          <input id="name" placeholder="Seu nome" required type="text"/>
         </div>
         <div class="form-group">
           <label for="phone">Telefone</label>
-          <input id="phone" placeholder="(11) 97551-5124" required="" type="tel"/>
+          <input id="phone" placeholder="(11) 97551-5124" required type="tel"/>
         </div>
       </div>
+
       <div class="form-group">
         <label for="service">Serviço</label>
-        <select id="service" required="">
+        <select id="service" required>
           <option value="">Selecione uma opção</option>
           <option>Desinsetização</option>
           <option>Desratização</option>
@@ -412,10 +484,12 @@
           <option>Outro serviço</option>
         </select>
       </div>
+
       <div class="form-group">
         <label for="message">Mensagem</label>
         <textarea id="message" placeholder="Descreva brevemente o problema" rows="5"></textarea>
       </div>
+
       <button class="btn form-button" type="submit">
         <i class="fa-brands fa-whatsapp"></i> Enviar pelo WhatsApp
       </button>
@@ -458,7 +532,7 @@
 
     <div>
       <h3>Atendimento</h3>
-      <p>Segunda à Sexta 08h às 18h | Sabádo 08h às 12h</p>
+      <p>Segunda à Sexta 8h às 18h | Sabádo 8h às 12h | Domingo Fechado</p>
       <div class="socials">
         <a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
         <a aria-label="Facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
