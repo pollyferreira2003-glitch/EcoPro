@@ -1361,7 +1361,7 @@ button, input, select, textarea {
 }
 .credentials-grid .credential img {
   display: block;
-  width: 145px;
+  width: 100%;
   height: 145px;
   max-width: 100%;
   flex: 0 0 145px;
@@ -1370,13 +1370,7 @@ button, input, select, textarea {
   margin: 0 auto;
   transform-origin: center center;
 }
-/* Compensações visuais pelas margens internas de cada arquivo.
-   O IBAMA é a referência. As imagens mantêm suas proporções. */
-.credentials-grid .credential:nth-child(1) img { transform: scale(1.45); }
-.credentials-grid .credential:nth-child(2) img { transform: scale(1); }
-.credentials-grid .credential:nth-child(3) img { transform: scale(0.96); }
-.credentials-grid .credential:nth-child(4) img { transform: scale(1.24); }
-.credentials-grid .credential:nth-child(5) img { transform: scale(1.5); }
+/* Imagens previamente padronizadas: sem ampliação ou distorção individual. */
 .credentials-grid .credential span {
   position: relative;
   z-index: 1;
