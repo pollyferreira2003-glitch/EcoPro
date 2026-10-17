@@ -1333,6 +1333,61 @@ button, input, select, textarea {
 }
 
 
+/* PADRONIZAÇÃO VISUAL DAS CREDENCIAIS */
+
+.credentials-grid .credential {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  min-height: 230px;
+  padding: 24px 12px;
+}
+
+.credentials-grid .credential img {
+  display: block;
+  width: 150px;
+  height: 140px;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  margin: 0 auto;
+}
+
+/* Anvisa */
+.credentials-grid .credential:nth-child(1) img {
+  transform: scale(1.35);
+}
+
+/* Ibama - tamanho de referência */
+.credentials-grid .credential:nth-child(2) img {
+  transform: scale(1);
+}
+
+/* CRQ */
+.credentials-grid .credential:nth-child(3) img {
+  transform: scale(0.95);
+}
+
+/* Corpo de Bombeiros */
+.credentials-grid .credential:nth-child(4) img {
+  transform: scale(1.25);
+}
+
+/* CETESB */
+.credentials-grid .credential:nth-child(5) img {
+  transform: scale(1.45);
+}
+
+.credentials-grid .credential span {
+  display: block;
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 700;
+}
+
+
 /* Ajustes solicitados no documento Word */
 .image-water { background-image: url("limpeza-reservatorios.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; }
 .image-termite { background-image: url("cupim.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
