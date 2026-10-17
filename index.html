@@ -10,7 +10,7 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
 <link href="style.css" rel="stylesheet"/>
-<script crossorigin="anonymous" src="https://kit.fontawesome.com/6f3f0f69c1.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 </head>
 <body>
 
@@ -37,7 +37,10 @@
       <a href="#pragas">Pragas</a>
       <a href="#depoimentos">Avaliações</a>
       <a href="#contato">Contato</a>
-      <a aria-label="Abrir login da Área do Cliente EcoproPraga - Brasil" class="btn btn-small btn-client" href="https://www.benuerp.com.br/new/loginCliente.benu?empresa=1471ECOPRO&amp;corBotao=%23083D2D" rel="noopener noreferrer" target="_blank">
+      <a aria-label="Abrir login da Área do Cliente EcoproPraga - Brasil"
+         class="btn btn-small btn-client"
+         href="https://www.benuerp.com.br/new/loginCliente.benu?empresa=1471ECOPRO&amp;corBotao=%23083D2D"
+         rel="noopener noreferrer" target="_blank">
         <i class="fa-solid fa-right-to-bracket"></i> Área do Cliente
       </a>
     </nav>
@@ -159,7 +162,7 @@
         <div class="service-body">
           <span class="service-icon"><i class="fa-solid fa-pump-soap"></i></span>
           <h3>Sanitização de ambientes</h3>
-          <p>Aplicação profissional para higienização de áreas residenciais e corporativos.</p>
+          <p>Aplicação profissional para higienização de áreas residenciais e corporativas.</p>
           <a href="#contato">Solicitar serviço <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </article>
@@ -213,11 +216,26 @@
       <p>A EcoPro tem um sério compromisso com seus clientes e com o cumprimento das exigências legais e ambientais aplicáveis às suas atividades.</p>
     </div>
     <div class="credentials-grid reveal">
-      <div class="credential"><img src="credencial-anvisa.jpeg" alt="Logotipo da Anvisa" loading="lazy"><span>Anvisa</span></div>
-      <div class="credential"><img src="credencial-ibama.jpeg" alt="Logotipo do Ibama" loading="lazy"><span>Ibama</span></div>
-      <div class="credential"><img src="credencial-crq.png" alt="Logotipo do CRQ 4ª Região" loading="lazy"><span>CRQ — 4ª Região</span></div>
-      <div class="credential"><img src="credencial-bombeiros.jpg" alt="Emblema do Corpo de Bombeiros de São Paulo" loading="lazy"><span>Corpo de Bombeiros</span></div>
-      <div class="credential"><img src="credencial-cetesb.png" alt="Logotipo da CETESB" loading="lazy"><span>CETESB</span></div>
+      <div class="credential">
+        <img src="credencial-anvisa.jpeg" alt="Logotipo da Anvisa" loading="lazy">
+        <span>Anvisa</span>
+      </div>
+      <div class="credential">
+        <img src="credencial-ibama.jpeg" alt="Logotipo do Ibama" loading="lazy">
+        <span>Ibama</span>
+      </div>
+      <div class="credential">
+        <img src="credencial-crq.png" alt="Logotipo do CRQ 4ª Região" loading="lazy">
+        <span>CRQ — 4ª Região</span>
+      </div>
+      <div class="credential">
+        <img src="credencial-bombeiros.jpg" alt="Emblema do Corpo de Bombeiros de São Paulo" loading="lazy">
+        <span>Corpo de Bombeiros</span>
+      </div>
+      <div class="credential">
+        <img src="credencial-cetesb.png" alt="Logotipo da CETESB" loading="lazy">
+        <span>CETESB</span>
+      </div>
     </div>
     <p class="credentials-note">
       Órgãos e referências regulatórias do setor. A exibição dos logotipos não representa,
@@ -330,7 +348,11 @@
       <p>Preencha o formulário. Ao enviar, sua mensagem será aberta diretamente no WhatsApp.</p>
 
       <div class="contact-item">
-        <i class="fa-solid fa-phone"></i>
+        <span class="contact-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.09 5.18 2 2 0 0 1 5.08 3h3a2 2 0 0 1 2 1.72c.13.96.37 1.91.7 2.81a2 2 0 0 1-.45 2.11L9.06 10.9a16 16 0 0 0 4.04 4.04l1.26-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </span>
         <div>
           <strong>Telefone fixo e Whatsapp</strong>
           <a href="tel:+551144198108">(11) 4419-8108</a>
@@ -339,7 +361,12 @@
       </div>
 
       <div class="contact-item">
-        <i class="fa-solid fa-envelope"></i>
+        <span class="contact-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-10 6L2 7"/>
+          </svg>
+        </span>
         <div>
           <strong>E-mail</strong>
           <a href="mailto:contato@ecopropragas.com.br">contato@ecopropragas.com.br</a>
@@ -347,7 +374,12 @@
       </div>
 
       <div class="contact-item">
-        <i class="fa-solid fa-location-dot"></i>
+        <span class="contact-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+            <circle cx="12" cy="10" r="2.5"/>
+          </svg>
+        </span>
         <div>
           <strong>Área de atendimento</strong>
           <span>São Paulo e região metropolitana</span>
@@ -366,7 +398,6 @@
           <input id="phone" placeholder="(11) 97551-5124" required="" type="tel"/>
         </div>
       </div>
-
       <div class="form-group">
         <label for="service">Serviço</label>
         <select id="service" required="">
@@ -381,12 +412,10 @@
           <option>Outro serviço</option>
         </select>
       </div>
-
       <div class="form-group">
         <label for="message">Mensagem</label>
         <textarea id="message" placeholder="Descreva brevemente o problema" rows="5"></textarea>
       </div>
-
       <button class="btn form-button" type="submit">
         <i class="fa-brands fa-whatsapp"></i> Enviar pelo WhatsApp
       </button>
@@ -429,11 +458,13 @@
 
     <div>
       <h3>Atendimento</h3>
-      <p>Segunda à sexta 08h às 18h | Sabádo 08h às 12h </p>
+      <p>Segunda à Sexta 08h às 18h | Sabádo 08h às 12h</p>
       <div class="socials">
         <a aria-label="Instagram" href="#"><i class="fa-brands fa-instagram"></i></a>
         <a aria-label="Facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a aria-label="WhatsApp" href="https://wa.me/5511975515124"><i class="fa-brands fa-whatsapp"></i></a>
+        <a aria-label="WhatsApp" href="https://wa.me/5511975515124">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
       </div>
     </div>
   </div>
