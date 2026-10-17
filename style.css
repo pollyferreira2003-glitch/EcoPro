@@ -1308,96 +1308,105 @@ button, input, select, textarea {
   }
 }
 
-/* PADRONIZAÇÃO DAS CREDENCIAIS */
+/* =========================
+   SERVIÇOS - IMAGENS DEFINITIVAS
+========================= */
+.image-water {
+  background-image: url("limpeza-reservatorios.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-termite {
+  background-image: url("descupinizacao.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-analysis {
+  background-image: url("analise-agua.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+/* =========================
+   NOSSAS CREDENCIAIS
+   Cartões uniformes e logotipos proporcionais
+========================= */
+.credentials-section {
+  background: var(--cream);
+}
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
 .credentials-grid .credential {
+  min-width: 0;
+  min-height: 232px;
+  padding: 22px 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  gap: 16px;
   text-align: center;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--white);
+  box-shadow: 0 10px 25px rgba(8, 61, 45, 0.05);
 }
-
-.credentials-grid .credential img {
-  width: 150px;
-  height: 100px;
-  max-width: 100%;
-  object-fit: contain;
-  object-position: center;
-  display: block;
-  margin: 0 auto 12px;
-}
-
-.credentials-grid .credential span {
-  text-align: center;
-}
-
-
-/* PADRONIZAÇÃO VISUAL DAS CREDENCIAIS */
-
-.credentials-grid .credential {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  min-height: 230px;
-  padding: 24px 12px;
-}
-
 .credentials-grid .credential img {
   display: block;
-  width: 150px;
-  height: 140px;
+  width: 145px;
+  height: 145px;
   max-width: 100%;
+  flex: 0 0 145px;
   object-fit: contain;
   object-position: center;
   margin: 0 auto;
+  transform-origin: center center;
 }
-
-/* Anvisa */
-.credentials-grid .credential:nth-child(1) img {
-  transform: scale(1.35);
-}
-
-/* Ibama - tamanho de referência */
-.credentials-grid .credential:nth-child(2) img {
-  transform: scale(1);
-}
-
-/* CRQ */
-.credentials-grid .credential:nth-child(3) img {
-  transform: scale(0.95);
-}
-
-/* Corpo de Bombeiros */
-.credentials-grid .credential:nth-child(4) img {
-  transform: scale(1.25);
-}
-
-/* CETESB */
-.credentials-grid .credential:nth-child(5) img {
-  transform: scale(1.45);
-}
-
+/* Compensações visuais pelas margens internas de cada arquivo.
+   O IBAMA é a referência. As imagens mantêm suas proporções. */
+.credentials-grid .credential:nth-child(1) img { transform: scale(1.45); }
+.credentials-grid .credential:nth-child(2) img { transform: scale(1); }
+.credentials-grid .credential:nth-child(3) img { transform: scale(0.96); }
+.credentials-grid .credential:nth-child(4) img { transform: scale(1.24); }
+.credentials-grid .credential:nth-child(5) img { transform: scale(1.5); }
 .credentials-grid .credential span {
+  position: relative;
+  z-index: 1;
   display: block;
-  margin-top: 12px;
-  text-align: center;
+  width: 100%;
+  min-height: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.83rem;
+  line-height: 1.35;
   font-weight: 700;
+  color: var(--green-900);
+  text-align: center;
 }
-
-
-/* Ajustes solicitados no documento Word */
-.image-water { background-image: url("limpeza-reservatorios.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; }
-.image-termite { background-image: url("cupim.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
-.image-analysis { background-image: url("analise-agua.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
-.credentials-section { background: var(--cream); }
-.credentials-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
-.credential { background: var(--white); border: 1px solid var(--border); border-radius: 18px; padding: 20px 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center; box-shadow: 0 10px 25px rgba(8,61,45,.05); }
-.credential img { display: block; width: 100%; max-width: 125px; height: 110px; object-fit: contain; }
-.credential span { font-family: "Montserrat", sans-serif; font-size: .83rem; font-weight: 700; color: var(--green-900); }
-.credentials-note { color: var(--muted); font-size: .84rem; max-width: 900px; margin: 24px auto 0; text-align: center; }
+.credentials-note {
+  color: var(--muted);
+  font-size: 0.84rem;
+  max-width: 900px;
+  margin: 24px auto 0;
+  text-align: center;
+}
 .contact-item a + a { margin-top: 6px; }
-@media (max-width: 980px) { .credentials-grid { grid-template-columns: repeat(3, minmax(0,1fr)); } }
-@media (max-width: 720px) { .credentials-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } .credential { padding: 16px 8px; } .credential img { height: 90px; } }
+@media (max-width: 980px) {
+  .credentials-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .credentials-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .credentials-grid .credential { min-height: 195px; padding: 16px 8px; gap: 12px; }
+  .credentials-grid .credential img { width: 115px; height: 115px; flex-basis: 115px; }
+  .credentials-grid .credential span { font-size: 0.74rem; min-height: 34px; }
+}
+@media (max-width: 380px) {
+  .credentials-grid { grid-template-columns: 1fr; }
+}
