@@ -1691,6 +1691,27 @@ button {
   margin-top: 14px;
 }
 
+/* LOGO REDONDA NO RODAPÉ */
+
+.footer .logo .logo-icon.logo-image {
+  width: 110px;
+  height: 110px;
+  min-width: 110px;
+  flex: 0 0 110px;
+
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.footer .logo .logo-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+  object-position: center;
+}
+
 
 /* ==========================================================
    FIM DO STYLE.CSS
