@@ -1,10 +1,11 @@
 
-/* ==========================================================
+/* =====================================================
    ECOPROPRAGA - BRASIL
    STYLE.CSS COMPLETO
-   ========================================================== */
+   IMAGENS CORRIGIDAS
+===================================================== */
 
-/* 1. VARIÁVEIS E CONFIGURAÇÕES GERAIS */
+/* CONFIGURAÇÕES GERAIS */
 
 :root {
   --green-950: #052c22;
@@ -19,7 +20,7 @@
   --text: #153c30;
   --muted: #63756e;
   --border: #dce7df;
-  --shadow: 0 14px 36px rgba(8, 61, 45, 0.08);
+  --shadow: 0 14px 36px rgba(8, 61, 45, .08);
   --radius: 18px;
   --font: "Montserrat", Arial, sans-serif;
 }
@@ -50,8 +51,8 @@ img {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 button,
@@ -100,7 +101,7 @@ button {
 .eyebrow {
   display: inline-block;
   color: var(--green-600);
-  font-size: 0.78rem;
+  font-size: .78rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.8px;
@@ -117,9 +118,9 @@ button {
   border: 2px solid var(--green-600);
   border-radius: 10px;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: .9rem;
   line-height: 1.3;
-  transition: 0.25s ease;
+  transition: .25s ease;
   text-align: center;
 }
 
@@ -131,13 +132,13 @@ button {
 
 .btn-small {
   padding: 12px 17px;
-  font-size: 0.8rem;
+  font-size: .8rem;
 }
 
 .btn-outline {
   color: white;
   background: transparent;
-  border-color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(255,255,255,.7);
 }
 
 .btn-outline:hover {
@@ -158,7 +159,9 @@ button {
   border-color: var(--green-950);
 }
 
-/* 2. CABEÇALHO */
+/* =====================================================
+   CABEÇALHO E LOGO
+===================================================== */
 
 .topbar {
   display: none !important;
@@ -169,7 +172,7 @@ button {
   z-index: 100;
   width: 100%;
   background: white;
-  box-shadow: 0 4px 20px rgba(8, 61, 45, 0.07);
+  box-shadow: 0 4px 20px rgba(8,61,45,.07);
 }
 
 .nav-container {
@@ -204,14 +207,12 @@ button {
 .logo small {
   display: block;
   color: var(--muted);
-  font-size: 0.7rem;
+  font-size: .7rem;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-top: 4px;
 }
-
-/* Logo EcoPro circular */
 
 .logo .logo-icon.logo-image {
   display: flex;
@@ -237,8 +238,6 @@ button {
   border-radius: 50%;
 }
 
-/* Menu principal */
-
 .nav {
   display: flex;
   align-items: center;
@@ -248,10 +247,10 @@ button {
 
 .nav > a:not(.btn) {
   color: var(--green-900);
-  font-size: 0.82rem;
+  font-size: .82rem;
   font-weight: 700;
   white-space: nowrap;
-  transition: color 0.2s;
+  transition: color .2s;
 }
 
 .nav > a:not(.btn):hover {
@@ -277,7 +276,10 @@ button {
   font-size: 1.3rem;
 }
 
-/* 3. BANNER PRINCIPAL */
+/* =====================================================
+   BANNER PRINCIPAL
+   IMAGEM: dedetizacao-externa.jpeg
+===================================================== */
 
 .hero {
   position: relative;
@@ -288,11 +290,11 @@ button {
   background:
     linear-gradient(
       100deg,
-      rgba(3, 39, 29, 0.94) 0%,
-      rgba(5, 55, 39, 0.86) 53%,
-      rgba(5, 55, 39, 0.55) 100%
+      rgba(3,39,29,.94) 0%,
+      rgba(5,55,39,.86) 53%,
+      rgba(5,55,39,.55) 100%
     ),
-    url("banner.jpg") center / cover no-repeat,
+    url("dedetizacao-externa.jpeg") center / cover no-repeat,
     var(--green-900);
   color: white;
 }
@@ -301,12 +303,11 @@ button {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background:
-    radial-gradient(
-      circle at 85% 20%,
-      rgba(185, 228, 59, 0.11),
-      transparent 40%
-    );
+  background: radial-gradient(
+    circle at 85% 20%,
+    rgba(185,228,59,.11),
+    transparent 40%
+  );
 }
 
 .hero-content {
@@ -332,7 +333,7 @@ button {
 .hero p {
   max-width: 650px;
   font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255,255,255,.88);
 }
 
 .hero-actions {
@@ -353,7 +354,7 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  font-size: 0.82rem;
+  font-size: .82rem;
   font-weight: 600;
 }
 
@@ -361,7 +362,9 @@ button {
   color: var(--lime);
 }
 
-/* 4. CARTÕES DE ATENDIMENTO */
+/* =====================================================
+   ATENDIMENTO RESIDENCIAL / EMPRESARIAL / ORÇAMENTO
+===================================================== */
 
 .quick-contact {
   position: relative;
@@ -371,7 +374,7 @@ button {
 
 .quick-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0,1fr));
   gap: 22px;
 }
 
@@ -383,7 +386,7 @@ button {
   padding: 28px;
   background: white;
   border-radius: 22px;
-  box-shadow: 0 15px 35px rgba(8, 61, 45, 0.1);
+  box-shadow: 0 15px 35px rgba(8,61,45,.1);
 }
 
 .quick-grid article > i,
@@ -413,7 +416,7 @@ button {
 .quick-grid article strong {
   display: block;
   color: var(--green-900);
-  font-size: 0.97rem;
+  font-size: .97rem;
   font-weight: 800;
   line-height: 1.4;
   margin-bottom: 7px;
@@ -422,11 +425,13 @@ button {
 .quick-grid article div > span {
   display: block;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: .82rem;
   line-height: 1.6;
 }
 
-/* 5. SERVIÇOS */
+/* =====================================================
+   SERVIÇOS
+===================================================== */
 
 #servicos {
   padding-top: 110px;
@@ -434,7 +439,7 @@ button {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0,1fr));
   gap: 30px;
 }
 
@@ -447,12 +452,12 @@ button {
   border: 1px solid var(--border);
   border-radius: 22px;
   box-shadow: var(--shadow);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform .3s, box-shadow .3s;
 }
 
 .service-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 45px rgba(8, 61, 45, 0.13);
+  box-shadow: 0 20px 45px rgba(8,61,45,.13);
 }
 
 .service-image {
@@ -464,14 +469,14 @@ button {
   background-repeat: no-repeat;
 }
 
-/* Imagens dos serviços */
+/* NOMES EXATOS DAS IMAGENS DO GITHUB */
 
 .image-insects {
-  background-image: url("desinsetizacao.jpg");
+  background-image: url("desinsetizacao.png");
 }
 
 .image-rats {
-  background-image: url("desratizacao.jpg");
+  background-image: url("rato.jpeg");
 }
 
 .image-termite {
@@ -484,10 +489,12 @@ button {
 
 .image-birds {
   background-image: url("controle-aves.jpg");
+  background-size: contain;
+  background-color: white;
 }
 
 .image-sanitize {
-  background-image: url("sanitizacao.jpg");
+  background-image: url("dedetizacao-residencial.jpeg");
 }
 
 .image-analysis {
@@ -542,7 +549,7 @@ button {
 
 .service-body p {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: .92rem;
   line-height: 1.75;
   margin-bottom: 32px;
 }
@@ -553,16 +560,19 @@ button {
   gap: 12px;
   margin-top: auto;
   color: var(--green-700);
-  font-size: 0.86rem;
+  font-size: .86rem;
   font-weight: 800;
-  transition: color 0.2s;
+  transition: color .2s;
 }
 
 .service-body > a:hover {
   color: var(--green-600);
 }
 
-/* 6. QUEM SOMOS */
+/* =====================================================
+   QUEM SOMOS
+   IMAGEM: dedetizacao-industrial.jpeg
+===================================================== */
 
 .about-section {
   background: var(--cream);
@@ -586,10 +596,10 @@ button {
   border-radius: 25px;
   background:
     linear-gradient(
-      rgba(8, 61, 45, 0.08),
-      rgba(8, 61, 45, 0.08)
+      rgba(8,61,45,.08),
+      rgba(8,61,45,.08)
     ),
-    url("sobre.jpg") center / cover no-repeat,
+    url("dedetizacao-industrial.jpeg") center / cover no-repeat,
     #dce8df;
   box-shadow: var(--shadow);
 }
@@ -609,7 +619,7 @@ button {
   background: var(--green-600);
   color: white;
   text-align: center;
-  box-shadow: 0 15px 30px rgba(8, 61, 45, 0.16);
+  box-shadow: 0 15px 30px rgba(8,61,45,.16);
 }
 
 .experience-box strong {
@@ -619,7 +629,7 @@ button {
 }
 
 .experience-box span {
-  font-size: 0.8rem;
+  font-size: .8rem;
   font-weight: 700;
   margin-top: 10px;
 }
@@ -638,7 +648,7 @@ button {
   align-items: flex-start;
   gap: 12px;
   margin-bottom: 14px;
-  font-size: 0.91rem;
+  font-size: .91rem;
   font-weight: 600;
 }
 
@@ -647,7 +657,9 @@ button {
   margin-top: 5px;
 }
 
-/* 7. CREDENCIAIS */
+/* =====================================================
+   CREDENCIAIS
+===================================================== */
 
 .credentials-section {
   background: var(--cream);
@@ -655,7 +667,7 @@ button {
 
 .credentials-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0,1fr));
   gap: 18px;
   align-items: stretch;
 }
@@ -673,7 +685,7 @@ button {
   background: white;
   border: 1px solid var(--border);
   border-radius: 18px;
-  box-shadow: 0 10px 25px rgba(8, 61, 45, 0.05);
+  box-shadow: 0 10px 25px rgba(8,61,45,.05);
   text-align: center;
 }
 
@@ -695,8 +707,7 @@ button {
   width: 100%;
   min-height: 36px;
   color: var(--green-900);
-  font-family: var(--font);
-  font-size: 0.83rem;
+  font-size: .83rem;
   line-height: 1.35;
   font-weight: 700;
   text-align: center;
@@ -706,11 +717,13 @@ button {
   max-width: 900px;
   margin: 24px auto 0;
   color: var(--muted);
-  font-size: 0.84rem;
+  font-size: .84rem;
   text-align: center;
 }
 
-/* 8. PRINCIPAIS PRAGAS */
+/* =====================================================
+   PRINCIPAIS PRAGAS
+===================================================== */
 
 .pests-section {
   position: relative;
@@ -718,7 +731,7 @@ button {
   background:
     radial-gradient(
       ellipse at 90% 30%,
-      rgba(27, 165, 108, 0.1),
+      rgba(27,165,108,.1),
       transparent 45%
     ),
     linear-gradient(
@@ -739,21 +752,21 @@ button {
 
 .pests-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0,1fr));
   gap: 24px;
 }
 
 .pest-card {
   min-height: 220px;
   padding: 35px;
-  border: 1px solid rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255,255,255,.13);
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.09);
-  transition: background 0.3s, transform 0.3s;
+  background: rgba(255,255,255,.09);
+  transition: background .3s, transform .3s;
 }
 
 .pest-card:hover {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255,255,255,.14);
   transform: translateY(-4px);
 }
 
@@ -782,11 +795,13 @@ button {
 }
 
 .pest-card p {
-  color: rgba(255, 255, 255, 0.76);
-  font-size: 0.88rem;
+  color: rgba(255,255,255,.76);
+  font-size: .88rem;
 }
 
-/* 9. NÚMEROS */
+/* =====================================================
+   CONTADORES
+===================================================== */
 
 .numbers {
   padding: 52px 0;
@@ -796,7 +811,7 @@ button {
 
 .numbers-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0,1fr));
   gap: 20px;
   text-align: center;
 }
@@ -814,12 +829,14 @@ button {
 }
 
 .numbers-grid span {
-  font-size: 0.85rem;
+  font-size: .85rem;
   font-weight: 600;
   margin-top: 8px;
 }
 
-/* 10. COMO FUNCIONA */
+/* =====================================================
+   COMO FUNCIONA
+===================================================== */
 
 .process-section {
   background: white;
@@ -827,7 +844,7 @@ button {
 
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0,1fr));
   gap: 28px;
 }
 
@@ -874,10 +891,12 @@ button {
 
 .process-card p {
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: .88rem;
 }
 
-/* 11. AVALIAÇÕES */
+/* =====================================================
+   AVALIAÇÕES
+===================================================== */
 
 .testimonials {
   background: var(--cream);
@@ -885,7 +904,7 @@ button {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0,1fr));
   gap: 25px;
 }
 
@@ -910,7 +929,7 @@ button {
 .testimonial-card > p {
   flex: 1;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: .9rem;
   line-height: 1.8;
   margin-bottom: 25px;
 }
@@ -930,7 +949,7 @@ button {
   border-radius: 50%;
   background: #e9f5ed;
   color: var(--green-700);
-  font-size: 0.88rem;
+  font-size: .88rem;
   font-weight: 800;
 }
 
@@ -941,16 +960,18 @@ button {
 
 .client strong {
   color: var(--green-900);
-  font-size: 0.88rem;
+  font-size: .88rem;
   font-weight: 800;
 }
 
 .client small {
   color: var(--muted);
-  font-size: 0.74rem;
+  font-size: .74rem;
 }
 
-/* 12. CHAMADA PARA AÇÃO */
+/* =====================================================
+   CHAMADA PARA AÇÃO
+===================================================== */
 
 .cta {
   padding: 65px 0;
@@ -984,15 +1005,17 @@ button {
 
 .cta p {
   max-width: 650px;
-  color: rgba(255, 255, 255, 0.83);
-  font-size: 0.9rem;
+  color: rgba(255,255,255,.83);
+  font-size: .9rem;
 }
 
 .cta .btn {
   flex-shrink: 0;
 }
 
-/* 13. CONTATO */
+/* =====================================================
+   CONTATO
+===================================================== */
 
 .contact-section {
   background: white;
@@ -1000,7 +1023,7 @@ button {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: .9fr 1.1fr;
   align-items: start;
   gap: 75px;
 }
@@ -1050,7 +1073,7 @@ button {
   display: block;
   margin-bottom: 7px;
   color: var(--green-900);
-  font-size: 0.94rem;
+  font-size: .94rem;
   font-weight: 800;
 }
 
@@ -1058,7 +1081,7 @@ button {
 .contact-item div > span {
   display: block;
   color: var(--muted);
-  font-size: 0.91rem;
+  font-size: .91rem;
   overflow-wrap: anywhere;
 }
 
@@ -1070,7 +1093,7 @@ button {
   margin-top: 6px;
 }
 
-/* Formulário */
+/* FORMULÁRIO */
 
 .contact-form {
   padding: 38px;
@@ -1082,7 +1105,7 @@ button {
 
 .form-row {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0,1fr));
   gap: 18px;
 }
 
@@ -1096,7 +1119,7 @@ button {
 .form-group label {
   margin-bottom: 9px;
   color: var(--green-900);
-  font-size: 0.85rem;
+  font-size: .85rem;
   font-weight: 700;
 }
 
@@ -1112,8 +1135,8 @@ button {
   outline: none;
   background: white;
   color: var(--text);
-  font-size: 0.9rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  font-size: .9rem;
+  transition: border-color .2s, box-shadow .2s;
 }
 
 .form-group input,
@@ -1130,7 +1153,7 @@ button {
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: var(--green-600);
-  box-shadow: 0 0 0 3px rgba(21, 153, 99, 0.12);
+  box-shadow: 0 0 0 3px rgba(21,153,99,.12);
 }
 
 .form-group input::placeholder,
@@ -1143,7 +1166,9 @@ button {
   min-height: 54px;
 }
 
-/* 14. RODAPÉ */
+/* =====================================================
+   RODAPÉ
+===================================================== */
 
 .footer {
   padding-top: 70px;
@@ -1153,7 +1178,7 @@ button {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 0.8fr 1fr 0.9fr;
+  grid-template-columns: 1.5fr .8fr 1fr .9fr;
   gap: 40px;
   padding-bottom: 60px;
 }
@@ -1168,7 +1193,7 @@ button {
 }
 
 .footer-logo small {
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255,255,255,.65);
 }
 
 .footer .logo-image {
@@ -1176,8 +1201,8 @@ button {
 }
 
 .footer-grid > div > p {
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 0.85rem;
+  color: rgba(255,255,255,.68);
+  font-size: .85rem;
   line-height: 1.8;
   white-space: pre-line;
 }
@@ -1185,16 +1210,16 @@ button {
 .footer-grid h3 {
   margin-bottom: 22px;
   color: white;
-  font-size: 0.97rem;
+  font-size: .97rem;
   font-weight: 800;
 }
 
 .footer-grid > div > a:not(.logo) {
   display: block;
   margin-bottom: 12px;
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 0.83rem;
-  transition: color 0.2s;
+  color: rgba(255,255,255,.68);
+  font-size: .83rem;
+  transition: color .2s;
 }
 
 .footer-grid > div > a:hover {
@@ -1213,11 +1238,11 @@ button {
   justify-content: center;
   width: 39px;
   height: 39px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255,255,255,.18);
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255,255,255,.07);
   color: white;
-  transition: background 0.2s;
+  transition: background .2s;
 }
 
 .socials a:hover {
@@ -1226,13 +1251,15 @@ button {
 
 .footer-bottom {
   padding: 20px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.58);
-  font-size: 0.78rem;
+  border-top: 1px solid rgba(255,255,255,.12);
+  color: rgba(255,255,255,.58);
+  font-size: .78rem;
   text-align: center;
 }
 
-/* 15. WHATSAPP FLUTUANTE */
+/* =====================================================
+   WHATSAPP FLUTUANTE
+===================================================== */
 
 .whatsapp-float {
   position: fixed;
@@ -1248,15 +1275,17 @@ button {
   background: #25d366;
   color: white;
   font-size: 32px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  transition: transform 0.25s;
+  box-shadow: 0 8px 25px rgba(0,0,0,.2);
+  transition: transform .25s;
 }
 
 .whatsapp-float:hover {
   transform: scale(1.08);
 }
 
-/* 16. ANIMAÇÕES */
+/* =====================================================
+   ANIMAÇÕES
+===================================================== */
 
 .reveal {
   opacity: 1;
@@ -1275,12 +1304,14 @@ button {
   *::before,
   *::after {
     scroll-behavior: auto !important;
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
   }
 }
 
-/* 17. RESPONSIVIDADE - NOTEBOOK */
+/* =====================================================
+   RESPONSIVIDADE - NOTEBOOK
+===================================================== */
 
 @media (max-width: 1150px) {
   .nav {
@@ -1288,23 +1319,22 @@ button {
   }
 
   .nav > a:not(.btn) {
-    font-size: 0.76rem;
+    font-size: .76rem;
   }
 
   .logo strong {
     font-size: 1.08rem;
   }
 
-  .about-grid {
-    gap: 45px;
-  }
-
+  .about-grid,
   .contact-grid {
     gap: 45px;
   }
 }
 
-/* 18. RESPONSIVIDADE - TABLETS */
+/* =====================================================
+   RESPONSIVIDADE - TABLET
+===================================================== */
 
 @media (max-width: 980px) {
   .nav-container {
@@ -1327,7 +1357,7 @@ button {
     padding: 15px 24px 25px;
     border-top: 1px solid var(--border);
     background: white;
-    box-shadow: 0 15px 30px rgba(8, 61, 45, 0.12);
+    box-shadow: 0 15px 30px rgba(8,61,45,.12);
   }
 
   .nav.active,
@@ -1339,7 +1369,7 @@ button {
 
   .nav > a:not(.btn) {
     padding: 13px 0;
-    font-size: 0.92rem;
+    font-size: .92rem;
     border-bottom: 1px solid var(--border);
   }
 
@@ -1358,7 +1388,7 @@ button {
   }
 
   .services-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0,1fr));
   }
 
   .about-grid {
@@ -1366,20 +1396,17 @@ button {
     gap: 45px;
   }
 
-  .about-images {
-    min-height: 380px;
-  }
-
+  .about-images,
   .about-main {
     min-height: 380px;
   }
 
   .credentials-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0,1fr));
   }
 
   .pests-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0,1fr));
   }
 
   .contact-grid {
@@ -1388,11 +1415,13 @@ button {
   }
 
   .footer-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0,1fr));
   }
 }
 
-/* 19. RESPONSIVIDADE - CELULARES */
+/* =====================================================
+   RESPONSIVIDADE - CELULAR
+===================================================== */
 
 @media (max-width: 720px) {
   .container {
@@ -1419,11 +1448,11 @@ button {
   }
 
   .logo strong {
-    font-size: 0.94rem;
+    font-size: .94rem;
   }
 
   .logo small {
-    font-size: 0.57rem;
+    font-size: .57rem;
     letter-spacing: 1px;
   }
 
@@ -1441,7 +1470,7 @@ button {
   }
 
   .hero p {
-    font-size: 0.92rem;
+    font-size: .92rem;
   }
 
   .hero-features {
@@ -1449,7 +1478,7 @@ button {
   }
 
   .hero-features span {
-    font-size: 0.75rem;
+    font-size: .75rem;
   }
 
   .quick-contact {
@@ -1504,7 +1533,7 @@ button {
   }
 
   .credentials-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0,1fr));
     gap: 12px;
   }
 
@@ -1522,7 +1551,7 @@ button {
 
   .credentials-grid .credential span {
     min-height: 34px;
-    font-size: 0.74rem;
+    font-size: .74rem;
   }
 
   .pests-grid {
@@ -1536,15 +1565,11 @@ button {
   }
 
   .numbers-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0,1fr));
     gap: 30px 15px;
   }
 
-  .process-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
+  .process-grid,
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1606,7 +1631,9 @@ button {
   }
 }
 
-/* 20. TELAS MUITO PEQUENAS */
+/* =====================================================
+   TELAS MUITO PEQUENAS
+===================================================== */
 
 @media (max-width: 380px) {
   .logo {
@@ -1621,11 +1648,11 @@ button {
   }
 
   .logo strong {
-    font-size: 0.79rem;
+    font-size: .79rem;
   }
 
   .logo small {
-    font-size: 0.5rem;
+    font-size: .5rem;
   }
 
   .hero-actions {
