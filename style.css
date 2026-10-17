@@ -1687,7 +1687,15 @@ button {
     flex-basis: 145px;
   }
 }
+/* Rato branco no círculo verde - Desratização */
 
+.service-icon svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+  fill: currentColor;
+}
 /* =====================================================
    FIM DO STYLE.CSS
 ===================================================== */
