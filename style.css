@@ -1675,6 +1675,23 @@ button {
   }
 }
 
+/* CORRIGIR ESPAÇAMENTO DO ATENDIMENTO NO RODAPÉ */
+
+.footer-grid h3 {
+  margin-bottom: 12px;
+}
+
+.footer-grid > div > p {
+  margin-top: 0;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.footer .socials {
+  margin-top: 14px;
+}
+
+
 /* ==========================================================
    FIM DO STYLE.CSS
    ========================================================== */
