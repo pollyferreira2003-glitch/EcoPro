@@ -1308,6 +1308,31 @@ button, input, select, textarea {
   }
 }
 
+/* PADRONIZAÇÃO DAS CREDENCIAIS */
+
+.credentials-grid .credential {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.credentials-grid .credential img {
+  width: 150px;
+  height: 100px;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.credentials-grid .credential span {
+  text-align: center;
+}
+
+
 /* Ajustes solicitados no documento Word */
 .image-water { background-image: url("limpeza-reservatorios.jpg"); background-position: center; background-size: cover; background-repeat: no-repeat; }
 .image-termite { background-image: url("cupim.png"); background-position: center; background-size: cover; background-repeat: no-repeat; }
