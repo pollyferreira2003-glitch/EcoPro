@@ -1,10 +1,8 @@
 
 /* ==========================================================
    ECOPROPRAGA - BRASIL
-   STYLE.CSS COMPLETO
+   STYLE.CSS COMPLETO - 8 SERVIÇOS
    ========================================================== */
-
-/* 1. CONFIGURAÇÕES GERAIS */
 
 :root {
   --green-950: #052c22;
@@ -23,6 +21,8 @@
   --radius: 18px;
   --font: "Montserrat", Arial, sans-serif;
 }
+
+/* CONFIGURAÇÕES GERAIS */
 
 * {
   margin: 0;
@@ -107,7 +107,7 @@ button {
   letter-spacing: 1.8px;
 }
 
-/* 2. BOTÕES */
+/* BOTÕES */
 
 .btn {
   display: inline-flex;
@@ -161,7 +161,7 @@ button {
   border-color: var(--green-950);
 }
 
-/* 3. CABEÇALHO */
+/* CABEÇALHO */
 
 .topbar {
   display: none !important;
@@ -214,7 +214,7 @@ button {
   margin-top: 4px;
 }
 
-/* 4. LOGO COMPLETA NO CABEÇALHO E RODAPÉ */
+/* LOGOS SEM CORTES */
 
 .header .logo .logo-icon.logo-image,
 .footer .logo .logo-icon.logo-image {
@@ -242,7 +242,7 @@ button {
   border-radius: 0;
 }
 
-/* 5. MENU */
+/* MENU */
 
 .nav {
   display: flex;
@@ -282,7 +282,7 @@ button {
   font-size: 1.3rem;
 }
 
-/* 6. BANNER PRINCIPAL */
+/* BANNER PRINCIPAL */
 
 .hero {
   position: relative;
@@ -365,7 +365,7 @@ button {
   color: var(--lime);
 }
 
-/* 7. CARTÕES DE ATENDIMENTO */
+/* ATENDIMENTO RÁPIDO */
 
 .quick-contact {
   position: relative;
@@ -430,7 +430,7 @@ button {
   line-height: 1.6;
 }
 
-/* 8. SERVIÇOS */
+/* NOSSOS SERVIÇOS */
 
 #servicos {
   padding-top: 110px;
@@ -468,7 +468,7 @@ button {
   background-repeat: no-repeat;
 }
 
-/* 9. IMAGENS ORIGINAIS DOS SERVIÇOS */
+/* IMAGENS DOS 8 SERVIÇOS */
 
 .image-insects {
   background-image: url("desinsetizacao.png");
@@ -500,7 +500,16 @@ button {
   background-image: url("analise-agua.png");
 }
 
-/* 10. TEXTO E ÍCONES DOS SERVIÇOS */
+/* NOVO SERVIÇO: DESENTUPIMENTO */
+
+.image-unclogging {
+  background-image: url("desentupimento.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* TEXTO E ÍCONES DOS SERVIÇOS */
 
 .service-body {
   position: relative;
@@ -532,47 +541,21 @@ button {
   font-size: 23px;
 }
 
-.service-icon .animal-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  line-height: 1;
-}
-
-/* 11. RATO BRANCO COM CÍRCULO VERDE */
-
-.service-card .service-icon {
-  background-color: #159963;
-}
+/* RATO BRANCO NO CÍRCULO VERDE */
 
 .service-card .service-icon svg {
   display: block;
   width: 36px;
   height: 36px;
-  color: #ffffff;
-  fill: currentColor;
 }
 
-/* Mantém os detalhes internos do SVG */
-
-.service-card .service-icon svg circle {
+.service-card .service-icon svg g {
   fill: #ffffff;
 }
-
-/* Olho verde do rato */
 
 .service-card .service-icon svg circle:last-child {
   fill: #159963;
 }
-
-/* Caso o HTML antigo ainda utilize emoji */
-
-.service-card .service-icon .animal-icon {
-  filter: grayscale(1) brightness(0) invert(1);
-}
-
-/* 12. CONTEÚDO DOS SERVIÇOS */
 
 .service-body h3 {
   color: var(--green-900);
@@ -604,7 +587,7 @@ button {
   color: var(--green-600);
 }
 
-/* 13. QUEM SOMOS */
+/* QUEM SOMOS */
 
 .about-section {
   background: var(--cream);
@@ -689,7 +672,7 @@ button {
   margin-top: 5px;
 }
 
-/* 14. CREDENCIAIS */
+/* CREDENCIAIS */
 
 .credentials-section {
   background: var(--cream);
@@ -731,8 +714,6 @@ button {
 }
 
 .credentials-grid .credential span {
-  position: relative;
-  z-index: 1;
   display: block;
   width: 100%;
   min-height: 36px;
@@ -751,7 +732,7 @@ button {
   text-align: center;
 }
 
-/* 15. PRINCIPAIS PRAGAS */
+/* PRINCIPAIS PRAGAS */
 
 .pests-section {
   position: relative;
@@ -811,6 +792,20 @@ button {
   font-size: 37px;
 }
 
+/* RATO E FORMIGA VERDES, SEM TROCAR OS EMOJIS */
+
+.pests-section .pest-card > .animal-icon {
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(81%)
+    sepia(76%)
+    saturate(670%)
+    hue-rotate(22deg)
+    brightness(105%)
+    contrast(100%);
+}
+
 .pest-card h3 {
   margin-bottom: 12px;
   color: var(--white);
@@ -823,7 +818,7 @@ button {
   font-size: .88rem;
 }
 
-/* 16. CONTADORES */
+/* CONTADORES */
 
 .numbers {
   padding: 52px 0;
@@ -856,7 +851,7 @@ button {
   margin-top: 8px;
 }
 
-/* 17. COMO FUNCIONA */
+/* COMO FUNCIONA */
 
 .process-section {
   background: var(--white);
@@ -914,7 +909,7 @@ button {
   font-size: .88rem;
 }
 
-/* 18. AVALIAÇÕES */
+/* AVALIAÇÕES */
 
 .testimonials {
   background: var(--cream);
@@ -987,7 +982,7 @@ button {
   font-size: .74rem;
 }
 
-/* 19. CHAMADA PARA AÇÃO */
+/* CHAMADA PARA AÇÃO */
 
 .cta {
   padding: 65px 0;
@@ -1029,7 +1024,7 @@ button {
   flex-shrink: 0;
 }
 
-/* 20. CONTATO */
+/* CONTATO */
 
 .contact-section {
   background: var(--white);
@@ -1107,7 +1102,7 @@ button {
   margin-top: 6px;
 }
 
-/* 21. FORMULÁRIO */
+/* FORMULÁRIO */
 
 .contact-form {
   padding: 38px;
@@ -1180,7 +1175,7 @@ button {
   min-height: 54px;
 }
 
-/* 22. RODAPÉ */
+/* RODAPÉ */
 
 .footer {
   padding-top: 70px;
@@ -1207,8 +1202,6 @@ button {
 .footer-logo small {
   color: rgba(255, 255, 255, .65);
 }
-
-/* Logo do rodapé sem cortes */
 
 .footer .logo .logo-icon.logo-image {
   background: transparent;
@@ -1278,7 +1271,7 @@ button {
   text-align: center;
 }
 
-/* 23. WHATSAPP FLUTUANTE */
+/* WHATSAPP FLUTUANTE */
 
 .whatsapp-float {
   position: fixed;
@@ -1302,7 +1295,7 @@ button {
   transform: scale(1.08);
 }
 
-/* 24. ANIMAÇÕES */
+/* ANIMAÇÕES */
 
 .reveal {
   opacity: 1;
@@ -1326,7 +1319,7 @@ button {
   }
 }
 
-/* 25. NOTEBOOK */
+/* NOTEBOOK */
 
 @media (max-width: 1150px) {
   .nav {
@@ -1347,7 +1340,7 @@ button {
   }
 }
 
-/* 26. TABLET */
+/* TABLET */
 
 @media (max-width: 980px) {
   .nav-container {
@@ -1432,7 +1425,7 @@ button {
   }
 }
 
-/* 27. CELULAR */
+/* CELULAR */
 
 @media (max-width: 720px) {
   .container {
@@ -1450,8 +1443,6 @@ button {
   .nav-container {
     min-height: 90px;
   }
-
-  /* Logo completa no celular */
 
   .header .logo .logo-icon.logo-image,
   .footer .logo .logo-icon.logo-image {
@@ -1645,7 +1636,7 @@ button {
   }
 }
 
-/* 28. TELAS PEQUENAS */
+/* TELAS PEQUENAS */
 
 @media (max-width: 380px) {
   .logo {
@@ -1683,33 +1674,6 @@ button {
     flex-basis: 145px;
   }
 }
-
-
-/* ==================================================
-   RATO E FORMIGA - VERDE IGUAL AOS OUTROS ÍCONES
-   ================================================== */
-
-.pests-section .pest-card > .animal-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  /* Mantém o tamanho original */
-  font-size: 37px;
-  line-height: 1;
-
-  /* Converte as cores dos emojis para verde-limão */
-  filter:
-    brightness(0)
-    saturate(100%)
-    invert(81%)
-    sepia(76%)
-    saturate(670%)
-    hue-rotate(22deg)
-    brightness(105%)
-    contrast(100%);
-}
-
 
 /* ==========================================================
    FIM DO STYLE.CSS
