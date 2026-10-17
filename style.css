@@ -1684,6 +1684,33 @@ button {
   }
 }
 
+
+/* ==================================================
+   RATO E FORMIGA - VERDE IGUAL AOS OUTROS ÍCONES
+   ================================================== */
+
+.pests-section .pest-card > .animal-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Mantém o tamanho original */
+  font-size: 37px;
+  line-height: 1;
+
+  /* Converte as cores dos emojis para verde-limão */
+  filter:
+    brightness(0)
+    saturate(100%)
+    invert(81%)
+    sepia(76%)
+    saturate(670%)
+    hue-rotate(22deg)
+    brightness(105%)
+    contrast(100%);
+}
+
+
 /* ==========================================================
    FIM DO STYLE.CSS
    ========================================================== */
