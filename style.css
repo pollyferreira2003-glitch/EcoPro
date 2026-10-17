@@ -1404,3 +1404,9 @@ button, input, select, textarea {
 @media (max-width: 380px) {
   .credentials-grid { grid-template-columns: 1fr; }
 }
+
+/* AUMENTAR SOMENTE O LOGOTIPO DA ANVISA */
+.credentials-grid .credential:nth-child(1) img {
+  transform: scale(1.35);
+  transform-origin: center center;
+}
